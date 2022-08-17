@@ -8,12 +8,11 @@ body {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: blue;
 }
 
 .main-container {
   margin-top: 50px;
-  height: 15000px;
+  height: 1500px;
   display: inline-block;
   background-color: white;
 }
@@ -22,7 +21,6 @@ body {
   width: 1000px;
   /* display: flex;
   justify-content: center; */
-  background-color: red;
 }
 
 .position-sticky {
@@ -40,6 +38,7 @@ body {
 .child-2 {
   width: 100%;
   height: auto;
+  padding-top: 3em;
   display: flex;
   justify-content: center;
 }
@@ -96,7 +95,7 @@ body {
   display: inline-block;
 }
 #run_input {
-  width: 50px;
+  width: 80px;
 }
 
 #modal {

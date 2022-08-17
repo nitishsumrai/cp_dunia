@@ -9,6 +9,8 @@ $(window).scroll(function (e) {
   }
 });
 
+
+
 const matches = [
   {
     id: 1,
@@ -251,6 +253,7 @@ const nextMatch = matches
 })();
 
 (() => {
+
   const pastMatches = matches.filter((x) => {
     return x.time < Date.now();
   });
