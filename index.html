@@ -1,0 +1,92 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="body">
+        <span id="modal" class="hidden z-index flag"><div class="p-10 flag flex-row"> <img class="large-image flag" src="./assets/img/Misc/prediction_submit.png" alt="umpire_avatar"> <p id="predicted_text" class="flag"></p><button id ="confirm" class="">Confirm</button> </div></span>
+         <div class="main-container">
+            <div class="sub-main-container">
+               <div class="child-1">
+                  <button id="bt" class="position-sticky capsule">Predict and  Win</button>
+               </div>
+               <div class="child-2">
+                  <div class="child-2-1">
+                     <div>
+                        <div>
+                           <div id = "clock" class="capsule"></div>
+                        </div>
+                        <div>
+                           <form id="prediction">
+                              <div>
+                                 <div id="match-time" class="text-white-sans"></div>
+                              </div>
+                              <div class="flex">
+                                 <span class="team1 flex-row ">
+                                    <div> 
+                                        <img  id="team1-img" class="medium-image" src="" alt="team-1-avatar">
+                                        <strong id="team1-name" class="text-white-sans"></strong>
+                                    </div>
+                                    <input type="radio" id="team_radio" name="selected-team" value="1" required>
+                                 </span>
+                                 <span class="text-white-sans p-10">
+                                    VS
+                                 </span>
+                                 <span class="team2 flex-row ">
+                                    <div>
+                                    <img  id="team2-img" class="medium-image" src="" alt="team-2-avatar">
+                                    <strong id="team2-name" class="text-white-sans"></strong>
+                                </div>
+                                    <input type="radio" id="team_radio" name="selected-team" value="2" required>
+                                 </span>
+                              </div>
+                              <div>
+                                <div> 
+                                    <p id="run_predicted" class="text-white-sans"></p>
+                                    <input id="run_input" type="number" name="predicted-runs" required>
+                                </div>
+                                
+                                <button type="submit">Submit</button>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="child-2-2">
+                     <div></div>
+                  </div>
+               </div>
+            </div>
+            <div class="sub-main-container">
+                <div>
+                    <div>  <h4 class="text-white-sans" style="text-align: center;">Winners</h4></div>
+                    <div style="width: 90%; background-color: white;">
+                        <table id="results">
+                            <tr>
+                              <th>Date & Time</th>
+                              <th>Match between</th>
+                              <th>Result</th>
+                            </tr>
+                            <tr>
+                              <td>Alfreds Futterkiste</td>
+                              <td>Maria Anders</td>
+                              <td>Germany</td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+      </div>
+      </div>
+      </div>
+      <script src="main.js"></script>
+   </body>
+</html>
